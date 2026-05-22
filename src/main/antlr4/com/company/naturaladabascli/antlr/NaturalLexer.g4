@@ -1,0 +1,71 @@
+lexer grammar NaturalLexer;
+
+channels { COMMENTS }
+
+WS: [ \t]+ -> skip;
+
+NL: [\r\n]+;
+
+LINE_COMMENT: '!' ~[\r\n]* -> skip;
+
+END_FIND: 'END-FIND';
+END_IF: 'END-IF';
+END_DEFINE: 'END-DEFINE';
+END_DECIDE: 'END-DECIDE';
+END_TRANSACTION: 'END' [ \t]+ 'TRANSACTION';
+BACKOUT_TRANSACTION: 'BACKOUT' [ \t]+ 'TRANSACTION';
+
+DEFINE: 'DEFINE';
+DATA: 'DATA';
+LOCAL: 'LOCAL';
+GLOBAL: 'GLOBAL';
+PARAMETER: 'PARAMETER';
+
+VIEW: 'VIEW';
+OF: 'OF';
+
+FIND: 'FIND';
+READ: 'READ';
+GET: 'GET';
+HISTOGRAM: 'HISTOGRAM';
+WITH: 'WITH';
+STORE: 'STORE';
+UPDATE: 'UPDATE';
+DELETE: 'DELETE';
+
+CALLNAT: 'CALLNAT';
+PERFORM: 'PERFORM';
+INCLUDE: 'INCLUDE';
+
+IF: 'IF';
+ELSE: 'ELSE';
+DECIDE: 'DECIDE';
+COMPUTE: 'COMPUTE';
+MOVE: 'MOVE';
+ASSIGN: 'ASSIGN';
+REINPUT: 'REINPUT';
+INPUT: 'INPUT';
+WRITE: 'WRITE';
+DISPLAY: 'DISPLAY';
+
+ON: 'ON';
+VALUE: 'VALUE';
+ESCAPE: 'ESCAPE';
+
+END: 'END';
+
+STAR: '*';
+COMMA: ',';
+DOT: '.';
+COLON: ':';
+LPAREN: '(';
+RPAREN: ')';
+EQ: '=';
+
+STRING: '\'' ( ~'\'' | '\'\'' )* '\'';
+
+INT: [0-9]+;
+
+ID: [A-Za-z#] [A-Za-z0-9_-]*;
+
+OTHER: . ;
