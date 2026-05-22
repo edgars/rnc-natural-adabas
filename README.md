@@ -1,6 +1,6 @@
 # natural-adabas-cli-analyzer
 
-MVP de linha de comando em **Java 8** para inspecionar repositórios públicos ou pacotes ZIP contendo fontes **Software AG Natural** e **DDM (Data Definition Module)** relacionados a **Adabas**, gerando um **relatório Markdown** com inventário, modelo lógico, acessos a dados, matriz CRUD simplificada, chamadas entre programas e candidatos a regras de negócio (somente com evidência de código).
+MVP de linha de comando em **Java 11** para inspecionar repositórios públicos ou pacotes ZIP contendo fontes **Software AG Natural** e **DDM (Data Definition Module)** relacionados a **Adabas**, gerando um **relatório Markdown** com inventário, modelo lógico, acessos a dados, matriz CRUD simplificada, chamadas entre programas e candidatos a regras de negócio (somente com evidência de código).
 
 ## Objetivo
 
@@ -11,7 +11,7 @@ MVP de linha de comando em **Java 8** para inspecionar repositórios públicos o
 
 ## Pré-requisitos
 
-- **JDK / JRE 8**
+- **JDK / JRE 11** (ou superior)
 - **Apache Maven 3.x** (para compilar e empacotar)
 
 ## Como compilar
@@ -151,7 +151,7 @@ Trecho ilustrativo:
 
 | Componente        | Uso                          |
 |-------------------|------------------------------|
-| Java 8           | Linguagem e bytecode alvo    |
+| Java 11          | Linguagem e bytecode alvo    |
 | Maven            | Build e dependências         |
 | ANTLR 4.9.3      | Lexers/parsers               |
 | Picocli 4.7.x    | CLI                          |
