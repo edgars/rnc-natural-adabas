@@ -16,7 +16,8 @@
         <maven.compiler.release>11</maven.compiler.release>
         <antlr.version>4.9.3</antlr.version>
         <picocli.version>4.7.6</picocli.version>
-        <jgit.version>5.13.3.202401111512-r</jgit.version>
+        <!-- 6.3+ required for CloneCommand.setDepth (shallow clone); Java 11+ -->
+        <jgit.version>6.7.0.202309050840-r</jgit.version>
         <commons-io.version>2.11.0</commons-io.version>
         <commons-compress.version>1.21</commons-compress.version>
         <junit.version>4.13.2</junit.version>

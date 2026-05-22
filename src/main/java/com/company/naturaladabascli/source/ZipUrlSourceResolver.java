@@ -1,7 +1,7 @@
 package com.company.naturaladabascli.source;
 
 import com.company.naturaladabascli.cli.SourceType;
-import java.io.InputStream;
+import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
 import org.apache.commons.compress.archivers.zip.ZipFile;
 
 import java.io.InputStream;

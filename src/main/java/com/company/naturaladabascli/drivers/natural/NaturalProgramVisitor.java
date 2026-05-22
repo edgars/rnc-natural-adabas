@@ -2,6 +2,7 @@ package com.company.naturaladabascli.drivers.natural;
 
 import com.company.naturaladabascli.antlr.NaturalParser;
 import com.company.naturaladabascli.antlr.NaturalParserBaseVisitor;
+import com.company.naturaladabascli.model.BusinessRuleCandidate;
 import com.company.naturaladabascli.model.CrudOperation;
 import com.company.naturaladabascli.model.DataAccess;
 import com.company.naturaladabascli.model.LegacyEntity;
